@@ -1,18 +1,18 @@
 #pink {
     width: 100%;
     height: 1080px;
-    background: radial-gradient(rgb(161, 146, 146), rgb(216, 76, 100));
+    background: radial-gradient(rgb(196, 173, 173), rgb(216, 16, 50));
     animation-name: back-come;
-    animation-duration: 2.5s;
-  
-  
+    animation-duration: 1s;
+    display: none;
+
 }
 
 #bacground-img-pink {
     width: 50%;
     aspect-ratio: 1/1;
     position: absolute;
-    top: 0px;
+    top: 10%;
     left: 25%;
 }
 
@@ -23,7 +23,7 @@
     top: 10%;
     left: 30%;
     animation: obj-come;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
 }
 
 #txt-pink {
@@ -46,31 +46,36 @@
     left: 10%;
     top: 60%;
     animation: head-come;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
 
 }
-#up-pink{
+
+#up-pink {
     width: 5%;
     aspect-ratio: 1/1;
     position: absolute;
     left: 85%;
-    top: 80%;
+    top: 60%;
 }
+
+
+
+
 #green {
     width: 100%;
     display: none;
     height: 1080px;
     background: radial-gradient(rgb(198, 230, 201), rgb(76, 216, 118));
     animation-name: back-come;
-    animation-duration: 2.5s;
-    
+    animation-duration: 1s;
+
 }
 
 #bacground-img-green {
     width: 50%;
     aspect-ratio: 1/1;
     position: absolute;
-    top: 0px;
+    top: 10%;
     left: 25%;
 }
 
@@ -81,7 +86,7 @@
     top: 10%;
     left: 30%;
     animation: obj-come;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
 }
 
 #txt-green {
@@ -104,17 +109,19 @@
     left: 10%;
     top: 60%;
     animation: head-come;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
 
 }
-#up-green{
+
+#up-green {
     width: 5%;
     aspect-ratio: 1/1;
     position: absolute;
     left: 85%;
     top: 60%;
 }
-#down-green{
+
+#down-green {
     width: 5%;
     aspect-ratio: 1/1;
     position: absolute;
@@ -124,29 +131,766 @@
 }
 
 
-body {}
+#orange {
+    width: 100%;
+    height: 1080px;
+    background: radial-gradient(rgb(198, 230, 201), rgb(224, 148, 35));
+    animation-name: back-come;
+    animation-duration: 1s;
 
-@keyframes back-come {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
+
+#bacground-img-orange {
+    width: 50%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+#obj-orange {
+    width: 40%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    animation: obj-come;
+    animation-duration: 1s;
+}
+
+#txt-orange {
+    font-size: 20px;
+    color: white;
+    width: 30%;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+}
+
+#orange-head1 {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    left: 10%;
+    top: 60%;
+    animation: head-come;
+    animation-duration: 1s;
+
+}
+
+#up-orange {
+    width: 5%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 85%;
+    top: 60%;
+}
+
+#down-orange {
+    width: 5%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 85%;
+    top: 80%;
+    transform: rotate(180deg);
+}
+
+
+
+
+#hover {
+    position: absolute;
+    top: 70%;
+    width: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    background: white;
+    left: 90%;
+    animation: hover;
+    animation-duration: 1s;
+    font-size: 12px;
+    align-items: center;
+
+}
+
+
+
+
+
+
+#nav {
+    width: 30%;
+    position: absolute;
+    top: 05%;
+    left: 10%;
+
+}
+
+button {
+    width: 10%;
+    position: absolute;
+    top: 05%;
+    left: 80%;
+    height: 50px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+#nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+#nav ul li {
+    width: 20%;
+    font-size: 25px;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+#nav ul li img {
+    top: -50%;
+    position: relative;
+}
+
+body {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 @keyframes obj-come {
-    from{
-       top: -1000px;
+    from {
+        top: -1000px;
     }
-    to{
+
+    to {
         top: 10%;
     }
 }
+
 @keyframes head-come {
-    from{
-       left: -1000px;
+    from {
+        left: -1000px;
     }
-    to{
+
+    to {
         left: 10%;
     }
+}
+
+@keyframes hover {
+    from {
+        left: 200%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    button {
+        width: 20%;
+        position: absolute;
+        top: 05%;
+        left: 70%;
+        height: 30px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        font-size: 12px;
+    }
+    #nav {
+        width: 60%;
+        position: absolute;
+        top: 04%;
+        left: 10%;
+    
+    }
+    
+    #nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        cursor: pointer;
+    
+    }
+    
+    #nav ul li {    
+        width: 20%;
+        font-size: 12px;
+        list-style: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #nav ul li img {
+        top: -50%;
+        position: relative;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes hover {
+        from {
+            left: -200%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    #hover {
+        position: absolute;
+        top: 82%;
+        width: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        aspect-ratio: 16/9;
+        background: white;
+        left: 0%;
+        animation: hover;
+        animation-duration: 1s;
+
+    }
+
+    #hover h1 {
+        font-size: 16px;
+    }
+
+    #orange {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(224, 148, 35));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-orange {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    #obj-orange {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-orange {
+        font-size: 18px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 63%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #orange-head1 {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 50%;
+        animation: head-come;
+        animation-duration: 1s;
+
+    }
+
+    #up-orange {
+        width: 5%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 85%;
+        top: 60%;
+    }
+
+    #down-orange {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        transform: rotate(180deg);
+    }
+
+
+
+    #green {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(76, 216, 118));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-green {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    #obj-green {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-green {
+        font-size: 18px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 63%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #green-head1 {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 50%;
+        animation: head-come;
+        animation-duration: 1s;
+
+    }
+
+    #up-green {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 75%;
+    }
+
+    #down-green {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        transform: rotate(180deg);
+    }
+
+
+    #pink {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(216, 16, 50));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-pink {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    #obj-pink {
+        width: 50%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-pink {
+        font-size: 18px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 63%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #pink-head1 {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 50%;
+        animation: head-come;
+        animation-duration: 1s;
+
+
+    }
+
+    #up-pink {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 75%;
+    }
+
+    #down-pink {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        transform: rotate(180deg);
+    }
+
+}
+@media (max-width:425px) {
+
+    button {
+        width: 20%;
+        position: absolute;
+        top: 05%;
+        left: 70%;
+        height: 30px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        font-size: 12px;
+    }
+    #nav {
+        width: 60%;
+        position: absolute;
+        top: 04%;
+        left: 10%;
+    
+    }
+    
+    #nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        cursor: pointer;
+    
+    }
+    
+    #nav ul li {    
+        width: 20%;
+        font-size: 8px;
+        list-style: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #nav ul li img {
+        top: -50%;
+        position: relative;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes hover {
+        from {
+            left: -200%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    #hover {
+        position: absolute;
+        top: 90%;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        aspect-ratio: 16/9;
+        background: white;
+        left: 0%;
+        animation: hover;
+        animation-duration: 1s;
+
+    }
+
+    #hover h1 {
+        font-size: 12px;
+    }
+
+    #orange {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(224, 148, 35));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-orange {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+
+    #obj-orange {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-orange {
+        font-size: 12px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 72%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #orange-head1 {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 65%;
+        animation: head-come;
+        animation-duration: 1s;
+
+    }
+
+    #up-orange {
+        width: 5%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 85%;
+        top: 60%;
+    }
+
+    #down-orange {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 94%;
+        transform: rotate(180deg);
+    }
+
+
+
+    #green {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(76, 216, 118));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-green {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+
+    #obj-green {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-green {
+        font-size: 12px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 77%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #green-head1 {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 65%;
+        animation: head-come;
+        animation-duration: 1s;
+
+    }
+
+    #up-green {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 88%;
+    }
+
+    #down-green {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 94%;
+        transform: rotate(180deg);
+    }
+
+
+    #pink {
+        width: 100%;
+ 
+        background: radial-gradient(rgb(198, 230, 201), rgb(216, 16, 50));
+        animation-name: back-come;
+        animation-duration: 1s;
+
+    }
+
+    #bacground-img-pink {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+
+    #obj-pink {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        animation: obj-come;
+        animation-duration: 1s;
+    }
+
+    #txt-pink {
+        font-size: 12px;
+        color: white;
+        width: 80%;
+        position: absolute;
+        top: 74%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    }
+
+    #pink-head1 {
+        color: white;
+        font-size: 30px;
+        
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+        left: 10%;
+        top: 65%;
+        animation: head-come;
+        animation-duration: 1s;
+
+    }
+
+    #up-pink {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 88%;
+    }
+
+    #down-pink {
+        width: 10%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 80%;
+        top: 94%;
+        transform: rotate(180deg);
+    }
+
 }
